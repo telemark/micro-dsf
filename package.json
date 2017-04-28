@@ -1,0 +1,64 @@
+{
+  "name": "micro-dsf",
+  "description": "dsf microservice",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
+  },
+  "contributors": [
+    {
+      "name": "Geir Gåsodden",
+      "email": "geir.gasodden@pythonia.no",
+      "url": "https://github.com/zrrrzzt"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=7.7.3"
+  },
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "setup": "npm install",
+    "standard-fix": "standard --fix",
+    "start": "micro",
+    "now-deploy": "npm test && now --npm && now alias"
+  },
+  "keywords": [
+    "microservice",
+    "micro",
+    "dsf",
+    "Telemark fylkeskommune"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telemark/micro-dsf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/micro-dsf/issues"
+  },
+  "homepage": "https://github.com/telemark/micro-dsf",
+  "devDependencies": {
+    "ava": "0.18.2",
+    "axios": "0.15.3",
+    "coveralls": "2.12.0",
+    "nsp": "2.6.3",
+    "nyc": "10.1.2",
+    "standard": "9.0.2",
+    "test-listen": "1.0.1"
+  },
+  "dependencies": {
+    "jsonwebtoken": "7.3.0",
+    "marked": "0.3.6",
+    "micro": "7.2.1",
+    "node-dsf": "3.0.0",
+    "winston": "2.3.1",
+    "winston-papertrail": "1.0.4"
+  }
+}
