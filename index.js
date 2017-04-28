@@ -18,21 +18,21 @@ module.exports = async (req, response) => {
     const decoded = await validateJwt({jwt: jwt, tokenKey: config.JWT_SECRET})
 
     if (decoded) {
-      logger(['Validated jwt'])
+      logger('info', ['Validated jwt'])
 
       const options = {
         method: data.method,
         config: config.DSF,
         query: data.query
       }
-
+      logger('info', ['method', data.method])
       try {
         const resp = await dsfLookup(options)
-        logger(['Response from dsf', resp])
+        logger('info', [data.method, 'response', resp, 'success'])
         send(response, 200, resp)
-      } catch (err) {
-        logger(['Error', err])
-        send(response, 500, err.message)
+      } catch (error) {
+        logger('error', [data.method, error])
+        send(response, 500, error.message)
       }
     }
   } else {
