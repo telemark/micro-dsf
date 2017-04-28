@@ -4,7 +4,7 @@
 
 # micro-dsf
 
-ldap auth microservice
+micro dsf service
 
 ## config docker.env
 
