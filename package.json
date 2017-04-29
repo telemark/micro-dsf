@@ -63,7 +63,7 @@
     "jsonwebtoken": "7.4.0",
     "marked": "0.3.6",
     "micro": "7.3.2",
-    "node-dsf": "3.0.0",
+    "node-dsf": "3.0.2",
     "winston": "2.3.1",
     "winston-papertrail": "1.0.4"
   }
