@@ -123,6 +123,9 @@ docker run -d \
   --name micro-dsf \
   telemark/micro-dsf
  ```
+ 
+ ## Related
+- [node-dsf](https://github.com/telemark/node-dsf) Node.js module for looking up data from DSF (Det sentrale folkeregister)
 
 ## License
 
