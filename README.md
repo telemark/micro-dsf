@@ -32,12 +32,15 @@ DSF_PASSORD=passord
   "method": "hentDetaljer",
   "query": {
     "saksref": "your-reference",
-    "foedselsnr": "26118633333",
-    "etternavn": "Enge",
-    "fornavn": "Jonas"
+    "foedselsnr": "01013300239",
+    "etternavn": "FOS",
+    "fornavn": "IRENE"
   }
 }
 ```
+
+See valid test data on [infotorg.no](https://qa.infotorg.no/test/cms/site/0/page?id=77)
+
 **Response**
 ```json
 {
@@ -112,6 +115,15 @@ DSF_PASSORD=passord
     }
   }
 }
+```
+
+## Call webservice with curl
+
+```bash
+curl -k -X POST \
+-H "Authorization: <INSERT-TOKEN>" \
+-d '{ "method": "hentDetaljer", "query": { "saksref": "your-reference", "foedselsnr": "01013300239" } }' \
+https://dsf.mikrotjenester.win/
 ```
 
 ## Run with docker
