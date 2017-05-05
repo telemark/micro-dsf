@@ -114,6 +114,16 @@ DSF_PASSORD=passord
 }
 ```
 
+## Run with docker
+
+```bash
+docker run -d \
+  -p 3000:3000 \
+  -E docker.env \
+  --name micro-dsf \
+  telemark/micro-dsf
+ ```
+
 ## License
 
 [MIT](LICENSE)
