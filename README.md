@@ -136,11 +136,11 @@ docker run -d \
   telemark/micro-dsf
  ```
  
- ## Related
+## Related
 - [node-dsf](https://github.com/telemark/node-dsf) Node.js module for looking up data from DSF (Det sentrale folkeregister)
 
 ## License
 
 [MIT](LICENSE)
 
-![alt text](https://robots.kebabstudios.party/micro-dsf.png "Robohash image of micro-dsf")
+![Robohash image of micro-dsf](https://robots.kebabstudios.party/micro-dsf.png "Robohash image of micro-dsf")
