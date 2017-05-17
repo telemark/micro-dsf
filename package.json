@@ -65,6 +65,6 @@
     "micro": "7.3.3",
     "node-dsf": "3.0.0",
     "winston": "2.3.1",
-    "winston-papertrail": "1.0.4"
+    "winston-papertrail": "1.0.5"
   }
 }
