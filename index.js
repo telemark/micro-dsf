@@ -31,8 +31,8 @@ module.exports = async (req, response) => {
         logger('info', [data.method, 'response', resp, 'success'])
         send(response, 200, resp)
       } catch (error) {
-        logger('error', [data.method, error])
-        send(response, 500, error.message)
+        logger('error', [data.method, JSON.stringify(error, null, 2)])
+        send(response, 500, JSON.stringify(error, null, 2))
       }
     }
   } else {
