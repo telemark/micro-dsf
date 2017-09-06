@@ -60,7 +60,7 @@
     "test-listen": "1.0.2"
   },
   "dependencies": {
-    "jsonwebtoken": "7.4.3",
+    "jsonwebtoken": "8.0.0",
     "marked": "0.3.6",
     "micro": "8.0.3",
     "node-dsf": "3.0.0",
