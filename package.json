@@ -64,7 +64,7 @@
     "marked": "0.3.17",
     "micro": "9.1.4",
     "node-dsf": "3.0.0",
-    "winston": "3.0.0-rc0",
+    "winston": "3.0.0-rc3",
     "winston-papertrail": "1.0.5"
   }
 }
