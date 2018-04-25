@@ -62,7 +62,7 @@
   "dependencies": {
     "jsonwebtoken": "8.2.1",
     "marked": "0.3.19",
-    "micro": "9.1.4",
+    "micro": "9.3.0",
     "node-dsf": "3.0.0",
     "winston": "3.0.0-rc5",
     "winston-papertrail": "1.0.5"
