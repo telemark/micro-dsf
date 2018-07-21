@@ -1,5 +1,5 @@
 # Setting the base to nodejs 7.10.0
-FROM node:7.10.0-alpine@sha256:ec27361dcb1a1467f182c98e3e973123fda92580ef7b60b17166f550124a98a3
+FROM node:6.14.3-alpine@sha256:ab6b240e933a77232bea533169a0350beabc0cc070e6c51fa4fbdef7dd2e3e0c
 
 # Maintainer
 MAINTAINER Jonas Enge
