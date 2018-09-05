@@ -45,3 +45,8 @@ jspm_packages
 
 # yarn
 yarn.lock
+
+# Env
+.env
+
+package-lock.json

@@ -10,12 +10,12 @@ const logger = require('./lib/logger')
 const validateJwt = require('./lib/validate-jwt')
 
 module.exports = async (req, response) => {
-  const {query} = await parse(req.url, true)
+  const { query } = await parse(req.url, true)
   let data = ['POST', 'PUT'].includes(req.method) ? await json(req) : query
 
   if (['POST'].includes(req.method)) {
     const jwt = req.headers.authorization
-    const decoded = await validateJwt({jwt: jwt, tokenKey: config.JWT_SECRET})
+    const decoded = await validateJwt({ jwt: jwt, tokenKey: config.JWT_SECRET })
 
     if (decoded) {
       logger('info', ['Validated jwt'])

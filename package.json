@@ -18,17 +18,17 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=7.10.0"
+    "node": ">=10.9.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
     "test-offline": "standard && ava",
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
-    "setup": "npm install",
     "standard-fix": "standard --fix",
     "start": "micro",
-    "now-deploy": "npm test && now --npm -E demo.env && now alias"
+    "now-deploy": "npm test && now --npm -E demo.env && now alias",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "microservice",
@@ -64,7 +64,7 @@
     "marked": "0.5.0",
     "micro": "9.3.3",
     "node-dsf": "3.0.17",
-    "winston": "3.0.0-rc6",
+    "winston": "2.4.4",
     "winston-papertrail": "1.0.5"
   }
 }

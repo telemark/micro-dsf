@@ -1,8 +1,4 @@
-# Setting the base to nodejs 7.10.0
-FROM node:7.10.1-alpine@sha256:4954ce53247180e207772f936223b11d52a7e4ee712dfe73fe2a75e39f785067
-
-# Maintainer
-MAINTAINER Jonas Enge
+FROM node:10.9.0-alpine
 
 # Bundle app source
 COPY . /src
