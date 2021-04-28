@@ -1,7 +1,7 @@
 {
   "name": "micro-dsf",
   "description": "dsf microservice",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "license": "MIT",
   "private": true,
   "author": {
