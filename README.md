@@ -31,7 +31,8 @@ DSF_PASSORD=passord
   "method": "hentDetaljer",
   "query": {
     "saksref": "your-reference",
-    "foedselsnr": "01013300239",
+    "foedselsnr": "01013300239", // requires this or foedselsdato
+    "foedselsdato": "010133", // requires this or foedselsnr
     "etternavn": "FOS",
     "fornavn": "IRENE"
   }
